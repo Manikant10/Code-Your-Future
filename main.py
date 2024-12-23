@@ -552,7 +552,7 @@ rf_grid = {'n_estimators':np.arange(10,1000,10),
 # In[86]:
 
 
-rs_rf = RandomizedSearchCV(RandomForestClassifier()
+rs_rf = RandomizedSearchCV(RandomForestClassifier())
 
 
 # In[87]:
