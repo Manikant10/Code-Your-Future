@@ -558,7 +558,7 @@ rs_rf = RandomizedSearchCV(
     n_iter=100,  # Example number of iterations
     scoring='accuracy',  # Example scoring metric
     cv=5,  # 5-fold cross-validation
-    random_state=42  # To ensure reproducibility
+    random_state=42)# To ensure reproducibility
 
 
 
