@@ -576,16 +576,6 @@ rs_rf.best_params_
 # In[90]:
 
 
-LogisticRegression score Before Hyperparameter Tuning: 80.48
-LogisticRegression score after Hyperparameter Tuning: 80.48 
-    
-------------------------------------------------------
-SVC score Before Hyperparameter Tuning: 79.38
-SVC score after Hyperparameter Tuning: 80.66
-    
---------------------------------------------------------
-RandomForestClassifier score Before Hyperparameter Tuning: 77.76
-RandomForestClassifier score after Hyperparameter Tuning: 80.66 
 
 
 # > Selecting **Random Forest Classifier** for Production with **80.66** accuracy. Earlier it was Logistic Regression with 80.48.
