@@ -552,7 +552,14 @@ rf_grid = {'n_estimators':np.arange(10,1000,10),
 # In[86]:
 
 
-rs_rf = RandomizedSearchCV(RandomForestClassifier())
+rs_rf = RandomizedSearchCV(
+    estimator=RandomForestClassifier(),
+    param_distributions=rf_grid,
+    n_iter=100,  # Example number of iterations
+    scoring='accuracy',  # Example scoring metric
+    cv=5,  # 5-fold cross-validation
+    random_state=42  # To ensure reproducibility
+
 
 
 # In[87]:
