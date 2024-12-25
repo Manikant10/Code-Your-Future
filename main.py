@@ -474,7 +474,7 @@ log_reg_grid = {"C": np.logspace(-4,4,20),
 
 rs_log_reg = RandomizedSearchCV(LogisticRegression(),
                    param_distributions = log_reg_grid,
-                   n_iter=20, cv=5, verbose=True)
+                   n_iter=5, cv=5, verbose=True)
 
 
 # In[74]:
@@ -488,13 +488,9 @@ rs_log_reg.fit(X,y)
 # In[75]:
 
 
-rs_log_reg.best_score_
-
 
 # In[76]:
 
-
-rs_log_reg.best_params_
 
 
 # ### SVC (Support Vector Classifier)
