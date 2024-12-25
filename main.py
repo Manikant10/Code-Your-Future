@@ -293,7 +293,7 @@ X[cols] = st.fit_transform(X[cols])
 # In[48]:
 
 
-X
+
 
 
 # ### 10. Splitting The Dataset Into The Training Set And Test Set & Applying K-Fold Cross Validation 
@@ -666,8 +666,8 @@ def predict():
 import os
 
 if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 5001))  # Default to 5000 if PORT is not set
-    app.run(host='0.0.0.0', port=50001)
+    port = int(os.environ.get('PORT', 5001))  # Default to 5001 if PORT is not set
+    app.run(host='0.0.0.0', port=port)  # Use the variable 'port'
 
 
 
