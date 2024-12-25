@@ -663,12 +663,14 @@ def predict():
 
     except Exception as e:
         return jsonify({'error': str(e)})
+
+from flask import Flask
 import os
 
-if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 5001))  # Default to 5001 if PORT is not set
-    app.run(host='0.0.0.0', port=port)  # Use the variable 'port'
+app = Flask(__name__)
 
+port = int(os.getenv("PORT", 5000))  # Default to 5000 if PORT is not set
+app.run(host="0.0.0.0", port=port)
 
 
 
