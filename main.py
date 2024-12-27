@@ -24,7 +24,7 @@ import pandas as pd
 # In[3]:
 
 
-data = pd.read_csv("C:\\Users\\manic\\OneDrive\\Dokumen\\loan_prediction.csv")
+data = pd.read_csv("loan_prediction.csv")
 
 
 # In[4]:
